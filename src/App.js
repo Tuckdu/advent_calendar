@@ -9,11 +9,13 @@ import datas from './data/riddles.json';
 const App = () => {
 
   function checkActivatedDay(){
+    // dev mode should be false by default
+    const allActive = false
     // Add property to deactivate day after today
     if(!datas[0].hasOwnProperty('isActivated')){
       const date = new Date();
       // check if we are in december (11)
-      if(date.getMonth() === 11){
+      if(allActive || date.getMonth() === 11){
         datas.forEach(function(part, index){
           this[index]["isActivated"] = this[index]["day"] <= date.getDate()
         }, datas)

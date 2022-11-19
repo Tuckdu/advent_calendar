@@ -44,4 +44,13 @@
   .background4{
       background:url('../media/gift_texture4.jpg') no-repeat center/cover;
   }
+
+  @media (max-width: 520px){
+    .dayCellContent{
+        width: 100px !important;
+        height: 100px !important;
+
+        font-size: 4rem;
+    }
+  }
 }
