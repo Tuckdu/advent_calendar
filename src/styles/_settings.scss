@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
+@import "../media/christmas-font/stylesheet.css";
+
+$font-1: 'Nova Round', cursive;
+$font-2: 'Dosis', sans-serif;
+$font-3: 'Josefin Sans', serif;
+$font-4: 'christmas_squad', serif;
+
+
+
+$color-1: #2A3234;
+$color-2: #617074;
+$color-3: #3D9C44;
+$color-4: #C3FFCA;
+$color-5: rgb(202, 28, 28);
+$white: #DDD;
+$black: #333;
+
+$borderRadius: 10px;
+$shadow: 0 1px 3px $black;
+$minHeight: 95vh;
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 1rem auto;
+    max-width: 1000px;
+    font-family: $font-4;
+    color: $white;
+    background: radial-gradient(circle, rgb(123, 4, 4) 0%, rgb(190, 7, 7) 62%);;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+    cursor: pointer;
+}
+a:visited {
+    color: $white;
+}

@@ -1,0 +1,47 @@
+.dayCell{
+    .activate{
+        cursor: pointer;
+    }
+    .deactivate{
+        cursor: default;
+        filter: grayscale(100%);
+    }
+    .dayCellContent{
+        width: 130px;
+        height: 130px;
+        padding-top: 10%;
+        
+        border: solid $white;
+        
+        text-align: center;
+        font-size: 5rem;
+        color: $white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #111;
+
+        h2{
+            // disable text selection
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+        }
+
+  }
+
+  .background1{
+      background:url('../media/gift_texture1.jpg') no-repeat center/cover;
+  }
+  .background2{
+      background:url('../media/gift_texture2.jpg') no-repeat center/cover;
+  }
+  .background3{
+      background:url('../media/gift_texture3.jpg') no-repeat center/cover;
+  }
+  .background4{
+      background:url('../media/gift_texture4.jpg') no-repeat center/cover;
+  }
+}

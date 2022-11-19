@@ -1,0 +1,122 @@
+[
+    {
+        "day":1,
+        "riddle": "Quand on joue, il faut la rattraper. Quand on la tire, il faut l’éviter.",
+        "response": "La balle"
+    },
+    {
+        "day":2,
+        "riddle": "Quand on est dedans, on ne sait plus où l’on est. Il n’est fait que d’eau mais peut devenir un impénétrable rideau.",
+        "response": "Le brouillard"
+    },
+    {
+        "day":3,
+        "riddle": "Celui qui le possède est bien informé, Malheureusement il est parfois crevé. Celui de l’orgue on fait résonner.",
+        "response": "Le tuyaux"
+    },
+    {
+        "day":4,
+        "riddle": "C’est un étalon qui ne galope pas, Un âge bienheureux et plein d’éclat, et s’il se laisse facilement aplatir, on ne prend pas ses feuilles pour écrire.",
+        "response": "L'or"
+    },
+    {
+        "day":5,
+        "riddle": "On peut y mettre ses papiers, Son argent ou bien ses clés. C’est aussi une façon de se coiffer, Ou bien encore un fruit à déguster.",
+        "response": "La banane"
+    },
+    {
+        "day":6,
+        "riddle": "Si en amour ils sont appréciés, Les gros, eux, sont à éviter. Les auteurs en ont des fameux, et certains servent pour des jeux.",
+        "response": "Les mots"
+    },
+    {
+        "day":7,
+        "riddle": "Son étoile ne brille pas, son cheval ne galope pas, son araignée ne pique pas, son éléphant ne barrit pas.",
+        "response": "La mer"
+    },
+    {
+        "day":8,
+        "riddle": "Dans de beaux draps il est parfois, son train peut provoquer l'effroi. Ne manquant jamais d'esprit, il apparaît quand vient la nuit.",
+        "response": "Le fantôme"
+    },
+    {
+        "day":9,
+        "riddle": "C'est le refuge des pensifs, des plus ambitieux, l'objectif ! Dans ses mers il n'y a point d'eau, pour la voir, on regarde en haut.",
+        "response": "La lune"
+    },
+    {
+        "day":10,
+        "riddle": "Pour moi, on vend aussi la mèche, je peux en faire voir de toutes les couleurs, et j'ai mon utilité dans un moteur.",
+        "response": "La bougie"
+    },
+    {
+        "day":11,
+        "riddle": "On ne m'apprécie ni petit, ni grand, mais on m'efface avec une solution.",
+        "response": "Un problème"
+    },
+    {
+        "day":12,
+        "riddle": "Couchée avec mes sœurs, j'ai la tête rose ou rouge, quand on me frotte, j'ai la tête blanche et jaune et dès qu'il y a un coup de vent, j'ai la tête noire.",
+        "response": "Une allumette"
+    },
+    {
+        "day":13,
+        "riddle": "J’ai un lit mais je ne dors pas, j’ai des bras mais pas de main, j’ai des lacets mais pas de chaussure.",
+        "response": "La rivière"
+    },
+    {
+        "day":14,
+        "riddle": "On me met sur la table, on me coupe, on me bat, et pourtant on ne me mange pas.",
+        "response": ["Les cartes", "Un jeu de cartes", "Un paquet de cartes"]
+    },
+    {
+        "day":15,
+        "riddle": "Je suis quelque chose dont personne ne veut mais que personne ne veut perdre.",
+        "response": "La guerre"
+    },
+    {
+        "day":16,
+        "riddle": "Lorsque l’hiver arrive, je n’ai presque plus de feuilles. Pourtant, je ne suis pas un arbre.",
+        "response": "Le calendrier"
+    },
+    {
+        "day":17,
+        "riddle": "Les femmes n'en ont pas, alors que les hommes l'ont, l'or l'a aussi et Pascal Obispo en a deux",
+        "response": ["Le O", "La lettre O"]
+    },
+    {
+        "day":18,
+        "riddle": " Il peut faire le bien, il peut faire le mal. Il purifie ou il détruit. Il laisse derrière lui un goût de cendre.",
+        "response": "Le feu"
+    },
+    {
+        "day":19,
+        "riddle": "Éternelles au pluriel, éphémères au singulier, on aime la voir à Noël, mais pas plus tard qu'en février.",
+        "response": "La neige"
+    },
+    {
+        "day":20,
+        "riddle": "Enlevez-lui une lettre, deux lettres, toutes ses lettres, il est toujours le même.",
+        "response": "Le facteur"
+    },
+    {
+        "day":21,
+        "riddle": "On la reçoit sans remercier. On en profite sans savoir pourquoi. On la donne à d'autres. On la perd sans s'en apercevoir.",
+        "response": "La vie"
+    },
+    {
+        "day":22,
+        "riddle": "Grâce à lui on peut commander aux marins et aux sportifs. Mais pour l’acteur, il faut l’avouer c’est un bruit très agressif.",
+        "response": "Le sifflet"
+    },
+    {
+        "day":23,
+        "riddle": "Bateau rapide sur la mer ou bien star parmi les lumières dont le nom chéri du public connaît une gloire éphémère.",
+        "response": "La vedette"
+    },
+    {
+        "day":24,
+        "riddle": "À la mairie pour les mariés, à la barre pour la vérité, sur la piste pour le passer",
+        "response": "Témoin"
+    }
+]
