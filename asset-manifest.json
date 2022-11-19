@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/advent_calendar/static/css/main.1c8261a1.css",
-    "main.js": "/advent_calendar/static/js/main.a5fe3956.js",
+    "main.js": "/advent_calendar/static/js/main.21f6bc0a.js",
     "static/media/gift_texture2.jpg": "/advent_calendar/static/media/gift_texture2.a08c2537967e2dff2b2e.jpg",
     "static/media/gift_texture1.jpg": "/advent_calendar/static/media/gift_texture1.17d1fc28fa4f8170d5f6.jpg",
     "static/media/gift_texture3.jpg": "/advent_calendar/static/media/gift_texture3.1902713bf009b1a8654d.jpg",
@@ -14,10 +14,10 @@
     "static/media/failure_ouch.mp3": "/advent_calendar/static/media/failure_ouch.bace23b8a8baeb28c1f3.mp3",
     "index.html": "/advent_calendar/index.html",
     "main.1c8261a1.css.map": "/advent_calendar/static/css/main.1c8261a1.css.map",
-    "main.a5fe3956.js.map": "/advent_calendar/static/js/main.a5fe3956.js.map"
+    "main.21f6bc0a.js.map": "/advent_calendar/static/js/main.21f6bc0a.js.map"
   },
   "entrypoints": [
     "static/css/main.1c8261a1.css",
-    "static/js/main.a5fe3956.js"
+    "static/js/main.21f6bc0a.js"
   ]
 }
