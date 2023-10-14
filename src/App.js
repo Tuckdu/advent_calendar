@@ -4,7 +4,7 @@ import {BrowserRouter,Route, Routes} from 'react-router-dom';
 import Calendar from './pages/Calendar';
 import NotFound from './pages/NotFound';
 
-import datas from './data/riddles.json';
+import datas from './data/riddles_2023';
 
 const App = () => {
 

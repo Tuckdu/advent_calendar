@@ -106,14 +106,13 @@ class RiddlePopUp extends Component {
     }
 
     render() {
-        const {day, riddle} = this.props.data;
+        const {day, riddle, img} = this.props.data;
         // Set volume of sfx
-        this.sfx.successFx.volume = 0.3;
-        this.sfx.successWoohooFx.volume = 0.3;
-        this.sfx.failureFx.volume = 0.3;
-        this.sfx.failureOuchFx.volume = 0.3;
-
-        const image_url = example_img
+        const main_volume = 0.2;
+        this.sfx.successFx.volume = main_volume;
+        this.sfx.successWoohooFx.volume = main_volume;
+        this.sfx.failureFx.volume = main_volume;
+        this.sfx.failureOuchFx.volume = main_volume;
 
         return (
             <div className="riddlePopUpBackground">
@@ -122,9 +121,9 @@ class RiddlePopUp extends Component {
                     <div className="riddleContent">
                         <h2>Enigme du {day}</h2>
 
-                        {/* <img src={image_url} alt="riddle_image"/> */}
+                        {img !== null && <img src={img} alt="riddle_image"/>}
 
-                        <p className="text">{riddle}</p>
+                        {riddle !== null && <p className="text">{riddle}</p>}
 
                         <input 
                             id='responseInput'

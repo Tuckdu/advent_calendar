@@ -24,7 +24,6 @@ class Calendar extends Component {
             while(random_value === except_value[0]){
                 random_value = Math.floor(Math.random() * max);
             }
-            console.log("Excluded: " + except_value + "; Random: " + random_value);
             except_value[0] = random_value
             return random_value
         }
