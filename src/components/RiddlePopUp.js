@@ -5,6 +5,8 @@ import successWoohooSound from '../media/sound/success_woohoo.mp3';
 import failureSound from '../media/sound/failure.mp3';
 import failureOuchSound from '../media/sound/failure_ouch.mp3';
 
+import example_img from '../media/christmas_bg.webp';
+
 class RiddlePopUp extends Component {
     state = {
         inputValue: '',
@@ -111,24 +113,29 @@ class RiddlePopUp extends Component {
         this.sfx.failureFx.volume = 0.3;
         this.sfx.failureOuchFx.volume = 0.3;
 
+        const image_url = example_img
+
         return (
-            <div className="riddlePopUp">
-                <div className="riddleContent">
+            <div className="riddlePopUpBackground">
+                <div className="riddlePopUp">
                     <button className="spu-close-popup" onClick={this.props.closeRiddle}>×</button>
-                    <h2>Enigme du {day}</h2>
+                    <div className="riddleContent">
+                        <h2>Enigme du {day}</h2>
 
-                    <p className="text">{riddle}</p>
+                        {/* <img src={image_url} alt="riddle_image"/> */}
 
-                    <input 
-                        id='responseInput'
-                        type="text" 
-                        value={this.state.inputValue} 
-                        onChange={evt => this.updateInputValue(evt)}
-                        onKeyDown={this.HandleKeyDown}
-                        placeholder="Qui suis-je"
-                        autoFocus/>
+                        <p className="text">{riddle}</p>
 
-                    <div className={"button " + this.state.buttonColor} onClick={this.CheckResponse}>{this.state.buttonValue}</div>
+                        <input 
+                            id='responseInput'
+                            type="text" 
+                            value={this.state.inputValue} 
+                            onChange={evt => this.updateInputValue(evt)}
+                            onKeyDown={this.HandleKeyDown}
+                            placeholder="Qui suis-je"/>
+
+                        <div className={"button " + this.state.buttonColor} onClick={this.CheckResponse}>{this.state.buttonValue}</div>
+                    </div>
                 </div>
             </div>
         );

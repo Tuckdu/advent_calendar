@@ -36,7 +36,7 @@ class DayCell extends Component {
             <div 
                 className={"dayCell" + (showRiddle && isActivated ? ' noHover' : '')}
                 onClick={this.handleToggleRiddle}
-            >
+                >
                 <div className={"dayCellContent background" + randomNumber + (isActivated ? ' activate' : ' deactivate')}>
                     <h2>{data.day}</h2>
                 </div>
