@@ -67,8 +67,9 @@ class RiddlePopUp extends Component {
             response = response.normalize('NFD').replace(/\p{Diacritic}/gu, "");
             // remove le, la, les, l', un, une, des
             response = response.replace(/un |une |l'|la |le |les |des /g, '');
-            // remove trailing s
+            // remove trailing s and x
             response = response.endsWith('s') ? response.slice(0, -1) : response;
+            response = response.endsWith('x') ? response.slice(0, -1) : response;
             
             return response;
         }
