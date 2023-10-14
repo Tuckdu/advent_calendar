@@ -9,8 +9,8 @@ import datas from './data/riddles.json';
 const App = () => {
 
   function checkActivatedDay(){
-    // dev mode should be false by default
-    const allActive = false
+    // dev mode: Simulate month in december (default=false)
+    const allActive = true;
     // Add property to deactivate day after today
     if(!datas[0].hasOwnProperty('isActivated')){
       const date = new Date();

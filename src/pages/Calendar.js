@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DayCell from './../components/DayCell';
-import Countdown from 'react-countdown'; 
+import Countdown from 'react-countdown';
+import Snowfall from 'react-snowfall';
 
 // Renderer callback with condition
 const countdownRenderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -14,39 +15,41 @@ const countdownRenderer = ({ days, hours, minutes, seconds, completed }) => {
   };
 
 class Calendar extends Component {
-    
-    isActivated = (datas) => {
-        // dev mode should be false by default
-        const allActive = false
-        const date = new Date();
-        const isBeforeToday = datas.day < date.getDay();
-        if(allActive || isBeforeToday){
-            this.setState({
-                isActivate: true
-            }) 
-        }else{
-            this.setState({
-                isActivate: false
-            })
-        }
-    }
-
     render() {
-        function getRandomInt(max) {
-            return Math.floor(Math.random() * max);
+        function getRandomInt(max, except_value=[]) {
+            let random_value = Math.floor(Math.random() * max);
+            if(except_value.length === 0){
+                return random_value;
+            }
+            while(random_value === except_value[0]){
+                random_value = Math.floor(Math.random() * max);
+            }
+            console.log("Excluded: " + except_value + "; Random: " + random_value);
+            except_value[0] = random_value
+            return random_value
         }
 
+        // dev mode: always active (default=false)
+        const allActive = false;
+
+        const nb_bg = 7
         const datas = this.props.datas;
+        // this need to be an array to be passed by reference
+        var except_value = [getRandomInt(nb_bg) + 1];
 
         return (
             <div className="calendar">
+                <Snowfall/>
                 <h1>Calendrier de l'avent 2022</h1>
 
-                {<Countdown className='countdown' date={new Date("Dec 1, 2022 00:00:00").getTime()} renderer={countdownRenderer}/>}
+                <Countdown className='countdown' date={new Date("Dec 1, 2023 00:00:00").getTime()} renderer={countdownRenderer}/>
                 
                 <div className="calendarContent">
                     {datas.map((data) => {
-                        return <DayCell key={data.day} data={data} randomNumber={getRandomInt(4)+1} isActivated={data.isActivated}/>;
+                        return <DayCell key={data.day} 
+                                        data={data} 
+                                        randomNumber={getRandomInt(nb_bg, except_value)+1} 
+                                        isActivated={data.isActivated || allActive}/>;
                     })}
                 </div>
             </div>

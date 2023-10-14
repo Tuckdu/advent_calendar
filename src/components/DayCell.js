@@ -23,12 +23,18 @@ class DayCell extends Component {
         }
     }
 
+    handleCloseRiddle = () => {
+        this.setState({
+            showRiddle:false
+        })
+    }
+
     render() {   
         const {data, randomNumber, isActivated} = this.props;
         const showRiddle = this.state.showRiddle;
         return (
             <div 
-                className={"dayCell" + (showRiddle && isActivated ? ' noHover' : '')} 
+                className={"dayCell" + (showRiddle && isActivated ? ' noHover' : '')}
                 onClick={this.handleToggleRiddle}
             >
                 <div className={"dayCellContent background" + randomNumber + (isActivated ? ' activate' : ' deactivate')}>
@@ -36,7 +42,7 @@ class DayCell extends Component {
                 </div>
 
                 {
-                    showRiddle && isActivated && <RiddlePopUp data={data}/>
+                    showRiddle && isActivated && <RiddlePopUp data={data} closeRiddle={this.handleCloseRiddle}/>
                 }
             </div>
         );

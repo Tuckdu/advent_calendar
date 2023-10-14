@@ -12,7 +12,7 @@ $color-1: #2A3234;
 $color-2: #617074;
 $color-3: #3D9C44;
 $color-4: #C3FFCA;
-$color-5: rgb(202, 28, 28);
+$color-5: #e4152d;
 $white: #DDD;
 $black: #333;
 
@@ -32,12 +32,23 @@ $minHeight: 95vh;
     padding: 0;
 }
 
+html {
+	// overscroll-behavior: none;
+    background-color: $color-5;
+}
+
 body {
-    margin: 1rem auto;
-    max-width: 1000px;
+    // margin: 1rem auto;
+    // max-width: 1000px;
     font-family: $font-4;
     color: $white;
-    background: radial-gradient(circle, rgb(123, 4, 4) 0%, rgb(190, 7, 7) 62%);;
+    background: no-repeat url('../media/christmas_bg.webp');    
+}
+
+div#root{
+    margin: 0rem auto;
+    padding: 1rem;
+    max-width: 1000px;
 }
 
 button {

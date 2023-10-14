@@ -33,16 +33,25 @@
   }
 
   .background1{
-      background:url('../media/gift_texture1.jpg') no-repeat center/cover;
+      background: url('../media/gift_textures/gift_texture1.jpg') no-repeat center/cover;
   }
   .background2{
-      background:url('../media/gift_texture2.jpg') no-repeat center/cover;
+      background: url('../media/gift_textures/gift_texture2.jpg') no-repeat center/cover;
   }
   .background3{
-      background:url('../media/gift_texture3.jpg') no-repeat center/cover;
+      background: url('../media/gift_textures/gift_texture3.jpg') no-repeat center/cover;
   }
   .background4{
-      background:url('../media/gift_texture4.jpg') no-repeat center/cover;
+      background: url('../media/gift_textures/gift_texture4.jpg') no-repeat center/cover;
+  }
+  .background5{
+      background: url('../media/gift_textures/gift_texture5.jpg') no-repeat center/cover;
+  }
+  .background6{
+      background: url('../media/gift_textures/gift_texture6.jpg') no-repeat center/cover;
+  }
+  .background7{
+      background: url('../media/gift_textures/gift_texture7.jpg') no-repeat center/cover;
   }
 
   @media (max-width: 520px){
@@ -53,4 +62,10 @@
         font-size: 4rem;
     }
   }
+}
+
+.mask1 {
+    
+    width: 130px;
+    height: 130px;
 }

@@ -114,6 +114,7 @@ class RiddlePopUp extends Component {
         return (
             <div className="riddlePopUp">
                 <div className="riddleContent">
+                    <button className="spu-close-popup" onClick={this.props.closeRiddle}>×</button>
                     <h2>Enigme du {day}</h2>
 
                     <p className="text">{riddle}</p>
