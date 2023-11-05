@@ -28,8 +28,14 @@ class Calendar extends Component {
             return random_value
         }
 
-        // dev mode: always active (default=false)
+        // dev mode: active all day cells(default=false)
         const allActive = false;
+        // dev mode: active day cells until actual day (default=false)
+        const simulateDecember = true;
+
+        let now = new Date();
+        const isDecember = now.getMonth() === 11 || simulateDecember;
+        const actualDay = now.getDate()
 
         const nb_bg = 7
         const datas = this.props.datas;
@@ -39,7 +45,7 @@ class Calendar extends Component {
         return (
             <div className="calendar">
                 <Snowfall/>
-                <h1>Calendrier de l'avent 2022</h1>
+                <h1>☃️ Calendrier de l'avent 2023 ☃️</h1>
 
                 <Countdown className='countdown' date={new Date("Dec 1, 2023 00:00:00").getTime()} renderer={countdownRenderer}/>
                 
@@ -48,7 +54,7 @@ class Calendar extends Component {
                         return <DayCell key={data.day} 
                                         data={data} 
                                         randomNumber={getRandomInt(nb_bg, except_value)+1} 
-                                        isActivated={data.isActivated || allActive}/>;
+                                        isActivated={(isDecember && (data.day <= actualDay)) || allActive}/>;
                     })}
                 </div>
             </div>

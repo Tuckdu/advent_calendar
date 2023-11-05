@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
-@import "../media/christmas-font/stylesheet.css";
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
+@import "../media/font/christmas-font/stylesheet.css";
+@import "../media/font/the_perfect_christmas/stylesheet.css";
+@import "../media/font/snowy_christmas/stylesheet.css";
 
 $font-1: 'Nova Round', cursive;
 $font-2: 'Dosis', sans-serif;
 $font-3: 'Josefin Sans', serif;
-$font-4: 'christmas_squad', serif;
-$font-5: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-44: 'Diphylleia', regular;
+$font-4: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-5: 'christmas_squad', serif;
+$font-6: 'the_perfect_christmasregular', serif;
+$font-7: 'snowy_christmas_-_personal_Rg', serif;
 
 $color-1: #2A3234;
 $color-2: #617074;
 $color-3: #3D9C44;
 $color-4: #C3FFCA;
 $color-5: #e4152d;
-$white: #DDD;
+$white: #DDD    ;
 $black: #333;
 
 $borderRadius: 10px;
@@ -33,15 +38,17 @@ $minHeight: 95vh;
 
 html {
 	// overscroll-behavior: none;
-    background-color: $color-5;
+    background-color: #9c0d20;
 }
 
 body {
     // margin: 1rem auto;
     // max-width: 1000px;
-    font-family: $font-4;
+    font-family: $font-6;
     color: $white;
-    background: no-repeat url('../media/christmas_bg.webp');    
+    background: url('../media/christmas_bg.webp') no-repeat top center, #444;
+    background-size: cover;
+    background-blend-mode: hard-light;
 }
 
 div#root{

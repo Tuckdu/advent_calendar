@@ -8,27 +8,11 @@ import datas from './data/riddles_2023';
 
 const App = () => {
 
-  function checkActivatedDay(){
-    // dev mode: Simulate month in december (default=false)
-    const allActive = true;
-    // Add property to deactivate day after today
-    if(!datas[0].hasOwnProperty('isActivated')){
-      const date = new Date();
-      // check if we are in december (11)
-      if(allActive || date.getMonth() === 11){
-        datas.forEach(function(part, index){
-          this[index]["isActivated"] = this[index]["day"] <= date.getDate()
-        }, datas)
-      }
-    }
-    return datas
-  }
-
   return (
     <>
     <BrowserRouter basename='/advent_calendar'>
         <Routes>
-          <Route path={"/"} element={<Calendar datas={checkActivatedDay()}/>}/>
+          <Route path={"/"} element={<Calendar datas={datas}/>}/>
           <Route path="*" element={<NotFound />}/>
         </Routes>
     </BrowserRouter>

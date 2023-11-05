@@ -5,8 +5,6 @@ import successWoohooSound from '../media/sound/success_woohoo.mp3';
 import failureSound from '../media/sound/failure.mp3';
 import failureOuchSound from '../media/sound/failure_ouch.mp3';
 
-import example_img from '../media/christmas_bg.webp';
-
 class RiddlePopUp extends Component {
     state = {
         inputValue: '',
@@ -68,45 +66,47 @@ class RiddlePopUp extends Component {
             // remove accent to check
             response = response.normalize('NFD').replace(/\p{Diacritic}/gu, "");
             // remove le, la, les, l', un, une, des
-            response = response.replace(/un |une |l'|la |le |les |des /g, '');
+            response = response.replace(/un |une |l'|l |la |le |les |des |d'|d /g, '');
             // remove trailing s and x
             response = response.endsWith('s') ? response.slice(0, -1) : response;
             response = response.endsWith('x') ? response.slice(0, -1) : response;
+            //remove spaces
+            response = response.replace(/ /g, '');
             
             return response;
+        };
+
+        let goodResponse = this.props.data.response;
+        let responseTry = this.state.inputValue;
+        let isMultipleGoodReponse = Array.isArray(goodResponse);
+
+        if (!isNaN(responseTry)){
+            responseTry = parseInt(responseTry);
         }
 
-        let responseTry = normalize_response(this.state.inputValue);
-        let goodResponse = this.props.data.response;
+        if(typeof responseTry === 'string'){
+            responseTry = normalize_response(this.state.inputValue);
+        }
+
         if(typeof goodResponse === 'string'){
             goodResponse = normalize_response(goodResponse);
         }
-        else{
+        else if (isMultipleGoodReponse){
             goodResponse.forEach(function(response, index) {
                 this[index] = normalize_response(response);
             }, goodResponse);
         }
+
+        if(isMultipleGoodReponse){
+            goodResponse.indexOf(responseTry) > -1 ? this.GoodReponseAnimation() : this.BadResponseAnimation();
+        } else {
+            goodResponse === responseTry ? this.GoodReponseAnimation() : this.BadResponseAnimation();
+        }
         
-        if(typeof goodResponse === 'string'){
-            if(responseTry.indexOf(" ") > -1){
-                if(responseTry.split(' ').indexOf(goodResponse) > -1){
-                    this.GoodReponseAnimation();
-                }
-            }else if(goodResponse === responseTry){
-                this.GoodReponseAnimation();
-            }else{
-                this.BadResponseAnimation();
-            }
-        }else if(Array.isArray(goodResponse) && goodResponse.indexOf(responseTry) > -1){
-            this.GoodReponseAnimation();
-        }
-        else{
-            this.BadResponseAnimation();
-        }
     }
 
     render() {
-        const {day, riddle, img} = this.props.data;
+        const {day, title, riddle, img, response} = this.props.data;
         // Set volume of sfx
         const main_volume = 0.2;
         this.sfx.successFx.volume = main_volume;
@@ -119,21 +119,25 @@ class RiddlePopUp extends Component {
                 <div className="riddlePopUp">
                     <button className="spu-close-popup" onClick={this.props.closeRiddle}>×</button>
                     <div className="riddleContent">
-                        <h2>Enigme du {day}</h2>
+                        <h2>{title} du {day} Décembre</h2>
 
                         {img !== null && <img src={img} alt="riddle_image"/>}
 
-                        {riddle !== null && <p className="text">{riddle}</p>}
+                        {riddle !== null && <div className="text">{riddle}</div>}
 
-                        <input 
+                        {response !== null && <input 
                             id='responseInput'
                             type="text" 
                             value={this.state.inputValue} 
                             onChange={evt => this.updateInputValue(evt)}
                             onKeyDown={this.HandleKeyDown}
-                            placeholder="Qui suis-je"/>
+                            placeholder="Réponse"/>}
 
-                        <div className={"button " + this.state.buttonColor} onClick={this.CheckResponse}>{this.state.buttonValue}</div>
+                        {response !== null && <div 
+                            className={"button " + this.state.buttonColor} 
+                            onClick={this.CheckResponse}>
+                                {this.state.buttonValue}
+                        </div>}
                     </div>
                 </div>
             </div>

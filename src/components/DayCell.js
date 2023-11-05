@@ -15,7 +15,7 @@ class DayCell extends Component {
             a = a.parentNode;
         }
         const isDayCell = (parents.filter(function (str) { return /dayCell/.test(str); })).length > 0;
-        const isRiddle = (parents.filter(function (str) { return /riddleContent/.test(str); })).length > 0;
+        const isRiddle = parents.indexOf('riddlePopUp') > -1;
         if(isDayCell && !isRiddle){
             this.setState({
                 showRiddle:!this.state.showRiddle
