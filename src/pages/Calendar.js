@@ -31,7 +31,7 @@ class Calendar extends Component {
         // dev mode: active all day cells(default=false)
         const allActive = false;
         // dev mode: active day cells until actual day (default=false)
-        const simulateDecember = true;
+        const simulateDecember = false;
 
         let now = new Date();
         const isDecember = now.getMonth() === 11 || simulateDecember;

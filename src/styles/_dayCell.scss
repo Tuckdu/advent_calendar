@@ -1,11 +1,36 @@
 .dayCell{
+    position: relative;
+
     .activate{
         cursor: pointer;
     }
     .deactivate{
         cursor: default;
-        filter: grayscale(100%);
+        
     }
+    .deactivate::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba($color: black, $alpha: 0.8);
+    }
+    .deactivate::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url('../media/lock.svg') no-repeat 50% 50%;
+        background-size: 50%;
+        filter: invert(100%);
+    }
+
     .dayCellContent{
         width: 130px;
         height: 130px;
