@@ -1,6 +1,6 @@
 {
   "name": "advent_calendar",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://tuckdu.github.io/advent_calendar",
   "private": true,
   "dependencies": {
