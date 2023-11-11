@@ -1,23 +1,42 @@
 {
   "files": {
-    "main.css": "/advent_calendar/static/css/main.ed7f9f3e.css",
-    "main.js": "/advent_calendar/static/js/main.7b53c40a.js",
+    "main.css": "/advent_calendar/static/css/main.1692d374.css",
+    "main.js": "/advent_calendar/static/js/main.67bda7f4.js",
     "static/media/gift_texture2.jpg": "/advent_calendar/static/media/gift_texture2.a08c2537967e2dff2b2e.jpg",
     "static/media/gift_texture1.jpg": "/advent_calendar/static/media/gift_texture1.17d1fc28fa4f8170d5f6.jpg",
     "static/media/gift_texture3.jpg": "/advent_calendar/static/media/gift_texture3.1902713bf009b1a8654d.jpg",
+    "static/media/pas_sage.png": "/advent_calendar/static/media/pas_sage.d644ec87ced28155fea0.png",
+    "static/media/christmas_bg.webp": "/advent_calendar/static/media/christmas_bg.a7ea9f5c98949bea2384.webp",
+    "static/media/gift_texture5.jpg": "/advent_calendar/static/media/gift_texture5.31d76bf370223a6b7559.jpg",
+    "static/media/claustrophobie.webp": "/advent_calendar/static/media/claustrophobie.896f65f46c14a788cd22.webp",
+    "static/media/flaque.png": "/advent_calendar/static/media/flaque.4b79a746445b1a984e53.png",
+    "static/media/the_perfect_christmas-webfont.woff": "/advent_calendar/static/media/the_perfect_christmas-webfont.e21eedd052c6057f7b1e.woff",
     "static/media/gift_texture4.jpg": "/advent_calendar/static/media/gift_texture4.5b052062fa4a1bb614f5.jpg",
+    "static/media/sucre_dorge.png": "/advent_calendar/static/media/sucre_dorge.5e974290ae022465a68a.png",
+    "static/media/the_perfect_christmas-webfont.woff2": "/advent_calendar/static/media/the_perfect_christmas-webfont.9b451cbedeb2b60f23f6.woff2",
+    "static/media/bonhomme.png": "/advent_calendar/static/media/bonhomme.2627fed43f6b9719d6af.png",
+    "static/media/dodu_svelte.webp": "/advent_calendar/static/media/dodu_svelte.99d86e69881385ef92a8.webp",
     "static/media/christmas-font-webfont.woff": "/advent_calendar/static/media/christmas-font-webfont.5316f776715c02a47799.woff",
+    "static/media/sapin_boules.webp": "/advent_calendar/static/media/sapin_boules.22f73f8c8cb2f269be4b.webp",
+    "static/media/calendrier.png": "/advent_calendar/static/media/calendrier.ff04a94b4787c3fca139.png",
+    "static/media/snowy_christmas_-_personal_use-webfont.woff": "/advent_calendar/static/media/snowy_christmas_-_personal_use-webfont.d2e550fd5080ccdb7d63.woff",
     "static/media/christmas-font-webfont.woff2": "/advent_calendar/static/media/christmas-font-webfont.0fb70bd5a3ce2fdd179e.woff2",
+    "static/media/buche.png": "/advent_calendar/static/media/buche.bb2efb9f05e0105764d5.png",
+    "static/media/snowy_christmas_-_personal_use-webfont.woff2": "/advent_calendar/static/media/snowy_christmas_-_personal_use-webfont.89ede06d6a8fead8d5f5.woff2",
+    "static/media/gift_texture6.jpg": "/advent_calendar/static/media/gift_texture6.052e072af73380e90aa2.jpg",
+    "static/media/gift_texture7.jpg": "/advent_calendar/static/media/gift_texture7.54905311e5efaced7ff6.jpg",
     "static/media/success.mp3": "/advent_calendar/static/media/success.373835d708415e764f87.mp3",
     "static/media/success_woohoo.mp3": "/advent_calendar/static/media/success_woohoo.5f88339d2995a06a9d8f.mp3",
+    "static/media/icicle.svg": "/advent_calendar/static/media/icicle.734a575ad37d9a3d6e55.svg",
     "static/media/failure.mp3": "/advent_calendar/static/media/failure.9944e9de7fccf4b41182.mp3",
     "static/media/failure_ouch.mp3": "/advent_calendar/static/media/failure_ouch.bace23b8a8baeb28c1f3.mp3",
     "index.html": "/advent_calendar/index.html",
-    "main.ed7f9f3e.css.map": "/advent_calendar/static/css/main.ed7f9f3e.css.map",
-    "main.7b53c40a.js.map": "/advent_calendar/static/js/main.7b53c40a.js.map"
+    "static/media/lock.svg": "/advent_calendar/static/media/lock.38359c99a1765dc6d3d5.svg",
+    "main.1692d374.css.map": "/advent_calendar/static/css/main.1692d374.css.map",
+    "main.67bda7f4.js.map": "/advent_calendar/static/js/main.67bda7f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed7f9f3e.css",
-    "static/js/main.7b53c40a.js"
+    "static/css/main.1692d374.css",
+    "static/js/main.67bda7f4.js"
   ]
 }
