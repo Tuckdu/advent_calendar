@@ -29,12 +29,25 @@ class DayCell extends Component {
         })
     }
 
+    componentDidMount() {
+        const elements = document.getElementsByClassName('currentDay');
+        
+        if(elements.length > 0){
+            elements[0].scrollIntoView({behavior: 'smooth', block: 'center'});
+        }   
+      }
+
     render() {   
-        const {data, randomNumber, isActivated} = this.props;
+        const {data, randomNumber, isActivated, currentDay} = this.props;
         const showRiddle = this.state.showRiddle;
+
         return (
             <div 
-                className={"dayCell" + (showRiddle && isActivated ? ' noHover' : '')}
+                className={
+                    "dayCell" + 
+                    (showRiddle && isActivated ? ' noHover' : '') +
+                    (data.day === currentDay && isActivated ? ' currentDay' : '')
+                }
                 onClick={this.handleToggleRiddle}
                 >
                 <div className={"dayCellContent background" + randomNumber + (isActivated ? ' activate' : ' deactivate')}>
