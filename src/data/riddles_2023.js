@@ -19,50 +19,50 @@ const category_obj = {
 // ----------- Casse-tête du professeur Layton --------------- \\
 
 const layton_candle = {
-    text: "Dix bougies sont allumées dans votre salle à manger. \
-    Un courant d'air vient éteindre deux d'entre elles. \
-    Plus tard, vous vous rendez compte d'une bougie supplémentaire s'est eteinte. \
-    Vous fermez la fenêtre afin de vous assurez qu'aucune autre bougie ne s'éteindra. \n\n\
-    En supposant que le vent ne vous perturbera plus, combien de bougie va-t-il vous rester ?",
+    text: `Dix bougies sont allumées dans votre salle à manger. 
+    Un courant d'air vient éteindre deux d'entre elles. 
+    Plus tard, vous vous rendez compte d'une bougie supplémentaire s'est eteinte. 
+    Vous fermez la fenêtre afin de vous assurez qu'aucune autre bougie ne s'éteindra. \n\n
+    En supposant que le vent ne vous perturbera plus, combien de bougie va-t-il vous rester ?`,
     response: 3
 }
 
 const layton_cell = {
-    text: "Un microbe se retrouve dans une bouteille. \
-    Au bout d'une minute, ce microbe se dédouble. \
-    Une autre minute passe et les deux microbes se dédoublent à leur tour pour donenr quatre microbes. \
-    Si ce processus se poursuit, la bouteille sera remplie au bout d'une heure. \n\n \
-    Au bien de combien de minutes la bouteille sera-t-elle remplie si vous commencez avec deux microbes au lieu d'un ?",
+    text: `Un microbe se retrouve dans une bouteille. 
+    Au bout d'une minute, ce microbe se dédouble. 
+    Une autre minute passe et les deux microbes se dédoublent à leur tour pour donenr quatre microbes. 
+    Si ce processus se poursuit, la bouteille sera remplie au bout d'une heure. \n\n 
+    Au bien de combien de minutes la bouteille sera-t-elle remplie si vous commencez avec deux microbes au lieu d'un ?`,
     response: 59
 }
 
 const layton_horse = {
-    text: "Trois chevaux de course galopent à une vitesse différente. \
-    Voici ce qu'ils sont capables de parcourir en une minute :\n\
-    Cheval A : 2 tours\n\
-    Cheval B : 3 tours\n\
-    Cheval C : 4 tours\n\
-    Les chevaux sont alignés sur la ligne de départ et commencent à galoper dans la même direction.\n\n\
-    Au bout de combien de temps les trois chevaux se trouveront-ils à nouveau en même temps sur la ligne de départ ?\n\
-    Votre réponse doit être exprimée en minutes.",
+    text: `Trois chevaux de course galopent à une vitesse différente. 
+    Voici ce qu'ils sont capables de parcourir en une minute :\n
+    Cheval A : 2 tours\n
+    Cheval B : 3 tours\n
+    Cheval C : 4 tours\n
+    Les chevaux sont alignés sur la ligne de départ et commencent à galoper dans la même direction.\n\n
+    Au bout de combien de temps les trois chevaux se trouveront-ils à nouveau en même temps sur la ligne de départ ?\n
+    Votre réponse doit être exprimée en minutes.`,
     response: 1
 }
 
 const layton_mouse = {
-    text: "Les souris sont connues pour se multiplier à la vitesse de l'éclair. \
-    Le type de souris qui nous intéresse ici est capable de mettre à bas une fois par mois. \
-    Par portée de douze. Les souriceaux deviennent capables de se procréer au bout de deux mois. \n\n\
-    Vous avez acheté un des souriceaux le jour de sa naissance. \
-    Au bout de dix mois, combien de souris aurez-vous ?",
+    text: `Les souris sont connues pour se multiplier à la vitesse de l'éclair. 
+    Le type de souris qui nous intéresse ici est capable de mettre à bas une fois par mois. 
+    Par portée de douze. Les souriceaux deviennent capables de se procréer au bout de deux mois. \n\n
+    Vous avez acheté un des souriceaux le jour de sa naissance. 
+    Au bout de dix mois, combien de souris aurez-vous ?`,
     response: 1
 }
 
 const layton_candy = {
-    text: "Trois garçons sont en train de discuter du nombre de bonbons qu'ils ont. \n\n\
-    A : C'est B qui en a le plus.\n\
-    B : Si C m'en donne un, j'en aurais deux fois plus que A.\n\
-    C : Il vaudrait mieux que B m'en donne deux comme ça on en aurait tous autant !\n\n\
-    Combien de bonbons y a-t-il en tout ?",
+    text: `Trois garçons sont en train de discuter du nombre de bonbons qu'ils ont. \n\n
+    A : C'est B qui en a le plus.\n
+    B : Si C m'en donne un, j'en aurais deux fois plus que A.\n
+    C : Il vaudrait mieux que B m'en donne deux comme ça on en aurait tous autant !\n\n
+    Combien de bonbons y a-t-il en tout ?`,
     response: 9
 }
 
@@ -144,7 +144,7 @@ const fouras_or = {
 
 // ------------------------------------------------------------------------ \\
 
-export default [
+export let datas = [
     {
         day: 1,
         title: category_obj.rebus,
