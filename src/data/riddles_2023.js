@@ -24,7 +24,7 @@ const layton_candle = {
     Plus tard, vous vous rendez compte d'une bougie supplémentaire s'est eteinte. 
     Vous fermez la fenêtre afin de vous assurez qu'aucune autre bougie ne s'éteindra. \n\n
     En supposant que le vent ne vous perturbera plus, combien de bougie va-t-il vous rester ?`,
-    response: 3
+    response: [3, 'trois', 'trois bougies']
 }
 
 const layton_cell = {
@@ -33,7 +33,7 @@ const layton_cell = {
     Une autre minute passe et les deux microbes se dédoublent à leur tour pour donenr quatre microbes. 
     Si ce processus se poursuit, la bouteille sera remplie au bout d'une heure. \n\n 
     Au bien de combien de minutes la bouteille sera-t-elle remplie si vous commencez avec deux microbes au lieu d'un ?`,
-    response: 59
+    response: [59, '59 minutes']
 }
 
 const layton_horse = {
@@ -45,7 +45,7 @@ const layton_horse = {
     Les chevaux sont alignés sur la ligne de départ et commencent à galoper dans la même direction.\n\n
     Au bout de combien de temps les trois chevaux se trouveront-ils à nouveau en même temps sur la ligne de départ ?\n
     Votre réponse doit être exprimée en minutes.`,
-    response: 1
+    response: [1, 'un', 'une minute']
 }
 
 const layton_mouse = {
@@ -54,7 +54,7 @@ const layton_mouse = {
     Par portée de douze. Les souriceaux deviennent capables de se procréer au bout de deux mois. \n\n
     Vous avez acheté un des souriceaux le jour de sa naissance. 
     Au bout de dix mois, combien de souris aurez-vous ?`,
-    response: 1
+    response: [1, 'une', 'un', 'une souris']
 }
 
 const layton_candy = {
@@ -63,7 +63,7 @@ const layton_candy = {
     B : Si C m'en donne un, j'en aurais deux fois plus que A.\n
     C : Il vaudrait mieux que B m'en donne deux comme ça on en aurait tous autant !\n\n
     Combien de bonbons y a-t-il en tout ?`,
-    response: 9
+    response: [9, 'neuf', 'neuf bonbons']
 }
 
 // ----------- Casse-tête du professeur Layton --------------- \\

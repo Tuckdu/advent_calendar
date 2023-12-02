@@ -93,7 +93,9 @@ class RiddlePopUp extends Component {
         }
         else if (isMultipleGoodReponse){
             goodResponse.forEach(function(response, index) {
-                this[index] = normalize_response(response);
+                if(typeof response !== 'number'){
+                    this[index] = normalize_response(response);
+                }
             }, goodResponse);
         }
 
