@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/advent_calendar/precache-manifest.d69b2732af9ffcf4253d8addd6fe96fa.js"
+  "/advent_calendar/precache-manifest.a3f743f9a278b2e3cf37bf0b94d637ec.js"
 );
 
 self.addEventListener('message', (event) => {
